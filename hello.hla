@@ -1,7 +1,21 @@
+//Template Starts
 program hello;
-#include ("stdlib.hhf")
+#include("stdlib.hhf")
+
+//Declarations
+static
+  num1: int8 := 10;
+  num2: int32;
+  switchState : boolean := false;
+  nameInitial : char;
 
 begin hello;
-stdout.put("Hello World of Assembly Language!",nl);
+//Statements
+stdout.put(switchState,nl);
+stdout.put("switchState" nl);
+stdout.put("Put your Name Initials here: ",nl);
+stdin.get(nameInitial);
+stdout.put(nameInitial,, nl);
 
 end hello;
+//Template Ends
